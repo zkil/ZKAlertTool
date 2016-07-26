@@ -15,6 +15,7 @@
 		9B8708C71D4767C200C49F9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B8708C51D4767C200C49F9F /* LaunchScreen.storyboard */; };
 		9B8708D21D4767C200C49F9F /* ZKAlertToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8708D11D4767C200C49F9F /* ZKAlertToolTests.m */; };
 		9B8708DD1D4767C200C49F9F /* ZKAlertToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8708DC1D4767C200C49F9F /* ZKAlertToolUITests.m */; };
+		9B8708EC1D4767EE00C49F9F /* ZKAlertTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8708EB1D4767EE00C49F9F /* ZKAlertTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		9B8708D81D4767C200C49F9F /* ZKAlertToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZKAlertToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B8708DC1D4767C200C49F9F /* ZKAlertToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKAlertToolUITests.m; sourceTree = "<group>"; };
 		9B8708DE1D4767C200C49F9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B8708EA1D4767EE00C49F9F /* ZKAlertTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKAlertTool.h; sourceTree = "<group>"; };
+		9B8708EB1D4767EE00C49F9F /* ZKAlertTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKAlertTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				9B8708C51D4767C200C49F9F /* LaunchScreen.storyboard */,
 				9B8708C81D4767C200C49F9F /* Info.plist */,
 				9B8708B71D4767C200C49F9F /* Supporting Files */,
+				9B8708EA1D4767EE00C49F9F /* ZKAlertTool.h */,
+				9B8708EB1D4767EE00C49F9F /* ZKAlertTool.m */,
 			);
 			path = ZKAlertTool;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 				9B8708BF1D4767C200C49F9F /* ViewController.m in Sources */,
 				9B8708BC1D4767C200C49F9F /* AppDelegate.m in Sources */,
 				9B8708B91D4767C200C49F9F /* main.m in Sources */,
+				9B8708EC1D4767EE00C49F9F /* ZKAlertTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
