@@ -55,7 +55,7 @@
         }
             break;
         case 2: {
-            [ZKAlertTool showAlertWithTitle:@"title" andMsg:@"msg" handler:^(NSUInteger index) {
+            [ZKAlertTool showAlert1WithTitle:@"title" andMsg:@"msg" handler:^(NSUInteger index) {
                 NSLog(@"tounch %ld",index);
             }];
         }

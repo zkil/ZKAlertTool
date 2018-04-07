@@ -16,12 +16,14 @@
 - (void)showAlertWithTitle:(NSString *)title andMsg:(NSString *)msg cancelTitle:(NSString *)cancelTitle otherTitles:(NSArray *)otherTitles handler:(void (^)(NSUInteger))handler {
 #ifdef __IPHONE_8_0
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:msg preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        if (handler != nil) {
-            handler(0);
-        }
-    }];
-    [alertController addAction:cancelAction];
+    if (cancelTitle != nil) {
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            if (handler != nil) {
+                handler(0);
+            }
+        }];
+        [alertController addAction:cancelAction];
+    }
     [otherTitles enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         UIAlertAction *otherAction = [UIAlertAction actionWithTitle:obj style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             if (handler != nil) {
@@ -51,8 +53,12 @@
     [self showAlertWithTitle:nil andMsg:msg cancelTitle:cancelTitle otherTitles:otherTitles handler:handler];
 }
 
-- (void)showAlertWithTitle:(NSString *)title andMsg:(NSString *)msg handler:(void (^)(NSUInteger))handler {
-    [self showAlertWithTitle:title andMsg:msg cancelTitle:NSLocalizedString(@"取消", nil) otherTitles:@[NSLocalizedString(@"确定", nil)] handler:handler];
+- (void)showAlert1WithTitle:(NSString *)title andMsg:(NSString *)msg handler:(void (^)(NSUInteger))handler {
+    [self showAlertWithTitle:title andMsg:msg cancelTitle:NSLocalizedString(@"取消", nil) otherTitles:@[NSLocalizedString(@"确认", nil)] handler:handler];
+}
+
+- (void)showAlert2WithTitle:(NSString *)title andMsg:(NSString *)msg handler:(void (^)(NSUInteger))handler {
+    [self showAlertWithTitle:title andMsg:msg cancelTitle:nil otherTitles:@[NSLocalizedString(@"确定", nil)] handler:handler];
 }
 
 - (void)showAlert1WithMsg:(NSString *)msg handler:(void (^)(NSUInteger))handler {
@@ -109,7 +115,7 @@
         viewC = self;
     }
     
-    return nil;
+    return viewC;
 }
 
 @end
