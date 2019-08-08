@@ -29,7 +29,7 @@
  @param otherTitles 其他标题数组
  @param handler 事件处理
  */
-- (void)showAlertWithTitle:(NSString *)title andMsg:(NSString *)msg cancelTitle:(NSString *)cancelTitle otherTitles:(NSArray *)otherTitles handler:(void (^)(NSUInteger))handler;
+- (void)showAlertWithTitle:(NSString *)title andMsg:(NSString *)msg cancelTitle:(NSString *)cancelTitle otherTitles:(NSArray *)otherTitles handler:(void (^)(NSUInteger index))handler;
 
 
 /**
@@ -40,7 +40,7 @@
  @param otherTitles 其他按钮标题
  @param handler 事件处理
  */
-- (void)showAlertWithMsg:(NSString *)msg cancelTitle:(NSString *)cancelTitle otherTitles:(NSArray *)otherTitles handler:(void (^)(NSUInteger))handler;
+- (void)showAlertWithMsg:(NSString *)msg cancelTitle:(NSString *)cancelTitle otherTitles:(NSArray *)otherTitles handler:(void (^)(NSUInteger index))handler;
 
 
 
@@ -51,7 +51,7 @@
  @param msg 信息
  @param handler 事件处理
  */
-- (void)showAlert1WithTitle:(NSString *)title andMsg:(NSString *)msg handler:(void (^)(NSUInteger))handler;
+- (void)showAlert1WithTitle:(NSString *)title andMsg:(NSString *)msg handler:(void (^)(NSUInteger index))handler;
 /**
  弹出警告框，包含标题，信息，确认按钮，事件处理
 
@@ -59,7 +59,7 @@
  @param msg 信息
  @param handler 事件处理
  */
-- (void)showAlert2WithTitle:(NSString *)title andMsg:(NSString *)msg handler:(void (^)(NSUInteger))handler;
+- (void)showAlert2WithTitle:(NSString *)title andMsg:(NSString *)msg handler:(void (^)(NSUInteger index))handler;
 
 /**
  弹出警告框，包含信息，确认按钮，取消按钮，事件处理
@@ -67,14 +67,14 @@
  @param msg 信息
  @param handler 事件处理
  */
-- (void)showAlert1WithMsg:(NSString *)msg handler:(void (^)(NSUInteger))handler;
+- (void)showAlert1WithMsg:(NSString *)msg handler:(void (^)(NSUInteger index))handler;
 /**
  弹出警告框，包含信息，确认按钮，事件处理
  
  @param msg 信息
  @param handler 事件处理
  */
-- (void)showAlert2WithMsg:(NSString *)msg handler:(void (^)(NSUInteger))handler;
+- (void)showAlert2WithMsg:(NSString *)msg handler:(void (^)(NSUInteger index))handler;
 
 /**
  弹出警告框，包含信息，确认按钮

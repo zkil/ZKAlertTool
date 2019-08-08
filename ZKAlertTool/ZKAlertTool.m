@@ -21,27 +21,27 @@ static dispatch_once_t once;
     return alertTool;
 }
 
-+ (void)showAlertWithTitle:(NSString *)title andMsg:(NSString *)msg cancelTitle:(NSString *)cancelTitle otherTitles:(NSArray *)otherTitles handler:(void (^)(NSUInteger))handler {
++ (void)showAlertWithTitle:(NSString *)title andMsg:(NSString *)msg cancelTitle:(NSString *)cancelTitle otherTitles:(NSArray *)otherTitles handler:(void (^)(NSUInteger index))handler {
     [[ZKAlertTool shareAlertTool] showAlertWithTitle:title andMsg:msg cancelTitle:cancelTitle otherTitles:otherTitles handler:handler];
 }
 
-+ (void)showAlertWithMsg:(NSString *)msg cancelTitle:(NSString *)cancelTitle otherTitles:(NSArray *)otherTitles handler:(void (^)(NSUInteger))handler {
++ (void)showAlertWithMsg:(NSString *)msg cancelTitle:(NSString *)cancelTitle otherTitles:(NSArray *)otherTitles handler:(void (^)(NSUInteger index))handler {
     [[ZKAlertTool shareAlertTool] showAlertWithMsg:msg cancelTitle:cancelTitle otherTitles:otherTitles handler:handler];
 }
 
-+ (void)showAlert1WithTitle:(NSString *)title andMsg:(NSString *)msg handler:(void (^)(NSUInteger))handler {
++ (void)showAlert1WithTitle:(NSString *)title andMsg:(NSString *)msg handler:(void (^)(NSUInteger index))handler {
     [[ZKAlertTool shareAlertTool] showAlert1WithTitle:title andMsg:msg handler:handler];
 }
 
-+ (void)showAlert2WithTitle:(NSString *)title andMsg:(NSString *)msg handler:(void (^)(NSUInteger))handler {
++ (void)showAlert2WithTitle:(NSString *)title andMsg:(NSString *)msg handler:(void (^)(NSUInteger index))handler {
     [[ZKAlertTool shareAlertTool] showAlert2WithTitle:title andMsg:msg handler:handler];
 }
 
-+ (void)showAlert1WithMsg:(NSString *)msg handler:(void (^)(NSUInteger))handler {
++ (void)showAlert1WithMsg:(NSString *)msg handler:(void (^)(NSUInteger index))handler {
     [[ZKAlertTool shareAlertTool] showAlert1WithMsg:msg handler:handler];
 }
 
-+ (void)showAlert2WithMsg:(NSString *)msg handler:(void (^)(NSUInteger))handler {
++ (void)showAlert2WithMsg:(NSString *)msg handler:(void (^)(NSUInteger index))handler {
     [[ZKAlertTool shareAlertTool] showAlert2WithMsg:msg handler:handler];
 }
 
@@ -55,27 +55,27 @@ static dispatch_once_t once;
 
 /***************************/
 
-- (void)showAlertWithTitle:(NSString *)title andMsg:(NSString *)msg cancelTitle:(NSString *)cancelTitle otherTitles:(NSArray *)otherTitles handler:(void (^)(NSUInteger))handler {
+- (void)showAlertWithTitle:(NSString *)title andMsg:(NSString *)msg cancelTitle:(NSString *)cancelTitle otherTitles:(NSArray *)otherTitles handler:(void (^)(NSUInteger index))handler {
     [[UIViewController zk_topViewController] showAlertWithTitle:title andMsg:msg cancelTitle:cancelTitle otherTitles:otherTitles handler:handler];
 }
 
-- (void)showAlertWithMsg:(NSString *)msg cancelTitle:(NSString *)cancelTitle otherTitles:(NSArray *)otherTitles handler:(void (^)(NSUInteger))handler {
+- (void)showAlertWithMsg:(NSString *)msg cancelTitle:(NSString *)cancelTitle otherTitles:(NSArray *)otherTitles handler:(void (^)(NSUInteger index))handler {
     [[UIViewController zk_topViewController] showAlertWithMsg:msg cancelTitle:cancelTitle otherTitles:otherTitles handler:handler];
 }
 
-- (void)showAlert1WithTitle:(NSString *)title andMsg:(NSString *)msg handler:(void (^)(NSUInteger))handler {
+- (void)showAlert1WithTitle:(NSString *)title andMsg:(NSString *)msg handler:(void (^)(NSUInteger index))handler {
     [[UIViewController zk_topViewController] showAlert1WithTitle:title andMsg:msg handler:handler];
 }
 
-- (void)showAlert2WithTitle:(NSString *)title andMsg:(NSString *)msg handler:(void (^)(NSUInteger))handler {
+- (void)showAlert2WithTitle:(NSString *)title andMsg:(NSString *)msg handler:(void (^)(NSUInteger index))handler {
     [[UIViewController zk_topViewController] showAlert2WithTitle:title andMsg:msg handler:handler];
 }
 
-- (void)showAlert1WithMsg:(NSString *)msg handler:(void (^)(NSUInteger))handler {
+- (void)showAlert1WithMsg:(NSString *)msg handler:(void (^)(NSUInteger index))handler {
     [[UIViewController zk_topViewController] showAlert1WithMsg:msg handler:handler];
 }
 
-- (void)showAlert2WithMsg:(NSString *)msg handler:(void (^)(NSUInteger))handler {
+- (void)showAlert2WithMsg:(NSString *)msg handler:(void (^)(NSUInteger index))handler {
     [[UIViewController zk_topViewController] showAlert2WithMsg:msg handler:handler];
 }
 
