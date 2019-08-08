@@ -107,7 +107,7 @@
 		9B8708B61D4767C200C49F9F /* ZKAlertTool */ = {
 			isa = PBXGroup;
 			children = (
-				FD281DAF22FBFDEA00DD0BF5 /* ZKAlertTool */,
+				FD281DB022FC1DB200DD0BF5 /* ZKAlertTool */,
 				9B8708BA1D4767C200C49F9F /* AppDelegate.h */,
 				9B8708BB1D4767C200C49F9F /* AppDelegate.m */,
 				9B8708BD1D4767C200C49F9F /* ViewController.h */,
@@ -147,7 +147,7 @@
 			path = ZKAlertToolUITests;
 			sourceTree = "<group>";
 		};
-		FD281DAF22FBFDEA00DD0BF5 /* ZKAlertTool */ = {
+		FD281DB022FC1DB200DD0BF5 /* ZKAlertTool */ = {
 			isa = PBXGroup;
 			children = (
 				9B8708EA1D4767EE00C49F9F /* ZKAlertTool.h */,
@@ -155,7 +155,7 @@
 				38E957E51F3468A30072A059 /* UIViewController+zk_Additions.h */,
 				38E957E61F3468A30072A059 /* UIViewController+zk_Additions.m */,
 			);
-			name = ZKAlertTool;
+			path = ZKAlertTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
